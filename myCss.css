@@ -1,0 +1,133 @@
+/* Default light theme */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --btn-bg: #007bff;
+  --btn-text: white;
+  --btn-border: #0056b3;
+  --input-bg: #e0e0e0; /* Updated input background */
+  --input-border: #ccc;
+  --input-focus: #007bff;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: white;
+  --btn-bg: #ffcc00;
+  --btn-text: black;
+  --btn-border: #e6b800;
+  --input-bg: #333; /* Darker input background for dark mode */
+  --input-border: #444;
+  --input-focus: #ffcc00;
+}
+
+/* Apply to all elements */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  zoom: 120%;
+  text-align: center;
+}
+
+/* Default button styles */
+button {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-border);
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  margin: 10px auto;
+  display: block;
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+/* Default input styles */
+input,
+select,
+textarea {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 2px solid var(--input-border);
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: calc(80% - 20px);
+  max-width: 300px;
+  text-align: left;
+  display: block;
+  margin: 10px auto;
+}
+
+/* Input focus effect */
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 5px var(--input-focus);
+}
+
+/* Placeholder text color */
+input::placeholder,
+textarea::placeholder {
+  color: rgba(128, 128, 128, 0.7);
+}
+
+/* Specific input types */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  background-color: var(--input-bg); /* Apply the new input background */
+  width: calc(80% - 20px);
+}
+
+/* Align radio buttons and checkboxes with labels inline */
+label {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  margin-right: 15px; /* Adds spacing between label-input pairs */
+}
+
+/* Ensure input fields inside labels are properly aligned */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+/* Select (dropdown) styling */
+select {
+  cursor: pointer;
+  width: calc(85% - 20px);
+  text-align: left;
+}
+
+/* Textarea styling */
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Range input */
+input[type="range"] {
+  width: 80%;
+  cursor: pointer;
+}
+
+/* File input */
+input[type="file"] {
+  background: none;
+  border: none;
+  color: var(--text-color);
+}
