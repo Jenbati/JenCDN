@@ -2,29 +2,29 @@
 :root {
   --bg-color: white;
   --text-color: black;
-  --btn-bg: #007bff;
+  --btn-bg-gradient: linear-gradient(135deg, #652d90, #d91c5c);
   --btn-text: white;
-  --btn-border: #0056b3;
-  --input-bg: #e0e0e0; /* Updated input background */
+  --btn-border: #652d90;
+  --input-bg: #e0e0e0;
   --input-border: #ccc;
-  --input-focus: #007bff;
+  --input-focus: #652d90;
 }
 
 /* Dark theme */
 [data-theme="dark"] {
   --bg-color: #121212;
   --text-color: white;
-  --btn-bg: #ffcc00;
+  --btn-bg-gradient: linear-gradient(135deg, #652d90, #d91c5c);
   --btn-text: black;
-  --btn-border: #e6b800;
-  --input-bg: #333; /* Darker input background for dark mode */
+  --btn-border: #d91c5c;
+  --input-bg: #333;
   --input-border: #444;
-  --input-focus: #ffcc00;
+  --input-focus: #d91c5c;
 }
 
 /* Apply to all elements */
 body {
-  background-color: var(--bg-color);
+  background: linear-gradient(135deg, #652d90, #d91c5c);
   color: var(--text-color);
   font-family: Arial, sans-serif;
   zoom: 120%;
@@ -33,9 +33,9 @@ body {
 
 /* Default button styles */
 button {
-  background-color: var(--btn-bg);
+  background: var(--btn-bg-gradient);
   color: var(--btn-text);
-  border: 2px solid var(--btn-border);
+  border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
@@ -85,7 +85,7 @@ textarea::placeholder {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-  background-color: var(--input-bg); /* Apply the new input background */
+  background-color: var(--input-bg);
   width: calc(80% - 20px);
 }
 
@@ -95,7 +95,7 @@ label {
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  margin-right: 15px; /* Adds spacing between label-input pairs */
+  margin-right: 15px;
 }
 
 /* Ensure input fields inside labels are properly aligned */
@@ -152,23 +152,25 @@ td {
 }
 
 th {
-  background-color: var(--btn-bg);
+  background: var(--btn-bg-gradient);
   color: var(--btn-text);
 }
 
 tr:hover {
-  background-color: rgba(0, 123, 255, 0.1); /* Light hover effect for rows */
+  background-color: rgba(101, 45, 144, 0.1); /* Light hover with purple tint */
 }
 
 /* Anchor (link) styling */
 a {
-  color: var(--btn-bg);
+  color: var(--btn-text);
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 a:hover {
-  color: var(--btn-border);
+  background: linear-gradient(135deg, #652d90, #d91c5c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: underline;
 }
