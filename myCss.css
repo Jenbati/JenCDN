@@ -24,7 +24,7 @@
 
 /* Apply to all elements */
 body {
-  background: linear-gradient(135deg, #652d90, #d91c5c);
+  background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
   zoom: 120%;
