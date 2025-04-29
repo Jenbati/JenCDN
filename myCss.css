@@ -131,6 +131,44 @@ input[type="file"] {
   color: var(--text-color);
 }
 
-q{
-padding-top:50px;
+/* Table styling */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  font-size: 16px;
+  border: 2px solid var(--input-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--input-border);
+}
+
+th {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+}
+
+tr:hover {
+  background-color: rgba(0, 123, 255, 0.1); /* Light hover effect for rows */
+}
+
+/* Anchor (link) styling */
+a {
+  color: var(--btn-bg);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--btn-border);
+  text-decoration: underline;
 }
