@@ -172,3 +172,16 @@ a:hover {
   color: var(--btn-border);
   text-decoration: underline;
 }
+
+.a {
+  color: var(--btn-bg);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.a:hover {
+  color: var(--btn-border);
+  text-decoration: underline;
+}
+
