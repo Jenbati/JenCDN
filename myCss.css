@@ -33,7 +33,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
-  font-size: 32px; /* instead of zoom */
+  font-size: 20px; /* instead of zoom */
   text-align: center;
 }
 
