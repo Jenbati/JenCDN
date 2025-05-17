@@ -1,4 +1,10 @@
 /* Default light theme */
+*{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+
 :root {
   --bg-color: white;
   --text-color: black;
@@ -27,7 +33,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
-  font-size: 18px; /* instead of zoom */
+  font-size: 32px; /* instead of zoom */
   text-align: center;
 }
 
@@ -184,4 +190,31 @@ a:hover {
   color: var(--btn-border);
   text-decoration: underline;
 }
+
+
+      /* Centered container */
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* Full viewport height */
+        flex-direction: column;
+        text-align: center;
+        
+      }
+
+      main{
+        border:1px solid yellow;
+        padding: 32px;
+        border-radius: 12px;
+        box-shadow: 0 0 5px yellow;
+      }
+
+      /* Remove default bullet points for all list items */
+      ul {
+        list-style: none;
+        text-align: start;
+        color: darkred;
+        padding: 12px;
+      }
 
