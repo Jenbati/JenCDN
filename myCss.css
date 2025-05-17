@@ -27,7 +27,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   font-family: Arial, sans-serif;
-  zoom: 120%;
+  font-size: 18px; /* instead of zoom */
   text-align: center;
 }
 
@@ -174,7 +174,7 @@ a:hover {
 }
 
 .a {
-  color: var(--btn-bg);
+  color: black;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease-in-out;
