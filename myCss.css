@@ -213,8 +213,8 @@ a:hover {
       /* Remove default bullet points for all list items */
       ul {
         list-style: none;
-        text-align: start;
-        color: darkred;
+        text-align: center;
+        color: lightgoldenrodyellow;
         padding: 12px;
       }
 
